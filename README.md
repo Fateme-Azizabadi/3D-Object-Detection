@@ -40,11 +40,11 @@ The constraint that the 3D bounding box fits tightly into the 2D detection windo
 We can show the direction with R(theta, phi, alpha), but since the objects are parallel to the road surface, we can consider phi and theta zero.
 Here we have two directions, global direction (red color) and local direction (blue angle).
 
-![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/Orientation.Module.png)
+![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/Orientation.Module%20.png)
 
 The global direction as the car moves, its direction remains almost constant relative to the camera position.
 For example, in the picture below, this direction is to the right for all cars. However, the local direction changes with the car's dimensions in the photo, so it is better to use this angle to get the global angle, which is our primary goal. That is, consider the local angle that changes with the change of car dimensions as the input of the regression, and then we obtain the global angle from the local angle.
-![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/Orientation..Module.png)
+![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/Orientation..Module%20.png)
 
 ### **Loss**
 For loss, we used L2, where the value d is accurate dimensions, and the d-bar is average dimensions.
