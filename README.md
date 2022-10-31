@@ -13,8 +13,8 @@ The study of this method started in 2016 with [this article](https://ieeexplore.
 ### **3D Bounding Box**
 
 A 3D bbx is defined by its center, dimensions, and direction.
-
 ![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/3D.Bounding.Box.png)
+
 
 In this method, we tried to get the dimensions and direction simply with the help of regression. Then we make sure that these dimensions fit perfectly in the two-dimensional window.
 
