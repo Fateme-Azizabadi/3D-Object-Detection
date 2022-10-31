@@ -13,12 +13,13 @@ The study of this method started in 2016 with [this article](https://ieeexplore.
 ### **3D Bounding Box**
 
 A 3D bbx is defined by its center, dimensions, and direction.
-![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/3D.Bounding.Box.png)
+
+![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/3D.Bounding.Box%20.png)
 
 
 In this method, we tried to get the dimensions and direction simply with the help of regression. Then we make sure that these dimensions fit perfectly in the two-dimensional window.
 
-![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/2D.Constraint.png)
+![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/2D.Constraint%20.png)
 
 ### **Choice of Regression Parameters**
 
@@ -32,7 +33,7 @@ We decided to use the dimensions themselves because the variance is much lower. 
 The constraint that the 3D bounding box fits tightly into the 2D detection window requires that each side of the 2D bounding box be touched by the projection of at least one of the 3D box corners.
  We have eight corners and four sides, so we have to check 8 to the power of 4. These calculations are done in parallel and do not cause a problem in terms of time.
 
-![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/2D.Constraint.png)
+![](https://github.com/Fateme-Azizabadi/3D-Object-Detection/blob/main/Images/2D.Constraint%20.png)
 
 ## **Orientation  Module** 
 
